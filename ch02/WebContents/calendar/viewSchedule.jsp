@@ -22,8 +22,10 @@ int year = Integer.parseInt(ymd.substring(0,4));
 int month = Integer.parseInt(ymd.substring(4,6));
 int dayOfMonth = Integer.parseInt(ymd.substring(6));
 int seq = Integer.parseInt(request.getParameter("seq"));
+
 ScheduleRepository repository = ScheduleRepository.getInstance();
  Todo todo=repository.getSchedule(LocalDate.of(year,month,dayOfMonth), seq);
+
 %>
 <form action="updateTodo.jsp" method="post">
    <input type="hidden" name="index" value="<%=todo.getSeq()%>">

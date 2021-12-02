@@ -19,6 +19,7 @@
 %>
 <%
      request.setCharacterEncoding("utf-8");
+
 	 String ymd = request.getParameter("ymd");
     int year = Integer.parseInt(ymd.substring(0,4));
     int month = Integer.parseInt(ymd.substring(4,6));
@@ -30,6 +31,7 @@
     String toDo = request.getParameter("todo");
     
 	LocalDate date = LocalDate.of(year, month, dayOfMonth); 
+
 	Todo todo = new Todo(date,index,fromTime,toTime,toDo);
 	
 	for(int i=0;i<list.size();i++){
@@ -40,6 +42,8 @@
 	    	schedule.setTodoList(toDoList);
 	    	}
 	    }
+
+
 %>
 <%
 	response.sendRedirect("calendar.jsp");

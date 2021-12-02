@@ -1,10 +1,9 @@
-<%@ page contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page contentType="text/html; charset=UTF-8"%>
 <%!
-	int pageCount = 0;
-	void addCount() {
-		pageCount++;
-	}
+int pageCount=0;
+void addCount(){
+	pageCount++;
+  }
 %>
 <%
 	addCount();

@@ -11,6 +11,7 @@
 %>
 <%
      request.setCharacterEncoding("utf-8");
+
 	 String ymd = request.getParameter("ymd");
     int year = Integer.parseInt(ymd.substring(0,4));
     int month = Integer.parseInt(ymd.substring(4,6));

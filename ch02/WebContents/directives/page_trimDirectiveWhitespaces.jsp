@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!-- 디렉티브나 스크립트 코드 위치에서 불필요하게 생성되는 줄바꿈 문자 제거 기능 -->
-<%@ page trimDirectiveWhitespaces="true" %>
+<!-- 디렉티브나 스크립트 코드위치에서 불필요하게 생성되는 줄바꿈 문자 제거 기능  -->    
+<%@ page trimDirectiveWhitespaces="true" %>    
 <!DOCTYPE html>
 <html>
 <head>

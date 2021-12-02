@@ -7,8 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<!-- import 속성 사용 전에 선언 -->
-<%@ page import = "java.util.Date" %>
-Today is <%=new Date() %>
+<!-- import 속성 사용전에 선언   -->
+ <%@ page import ="java.util.Date" %>
+ Today is <%=new Date() %>
 </body>
 </html>

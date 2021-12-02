@@ -10,11 +10,13 @@
  	int y=cal.get(Calendar.YEAR);
  	int m=cal.get(Calendar.MONTH)+1;
  	int d=cal.get(Calendar.DATE);
+
  	//y년 m월 1일의 요일
  	cal.set(y,m-1,1);
  	y=cal.get(Calendar.YEAR);
  	m=cal.get(Calendar.MONTH)+1;
  	int w=cal.get(Calendar.DAY_OF_WEEK); //1(일)~7(토) => 일요일일때 w에 1. 메소드를 외우면 된다.
+
  %>
 <!DOCTYPE html>
 <html>
@@ -62,6 +64,7 @@ function viewSchedule(date,seq){
 	<td width="100" bgcolor="#c8c8c8" align="center"><font color="blue">토</font></td>
 </tr>
 <%
+
 ScheduleRepository repository = ScheduleRepository.getInstance();
 List<Schedule> list = repository.getAllSchedules();
 int[] schedules = repository.getScheduleCounts();
@@ -78,6 +81,7 @@ int[] schedules = repository.getScheduleCounts();
 		out.println("<td align='center' bgcolor='#ffffff' style='color:"+fc+";'>");
 		out.print(i+"<a href='javascript:register("+i+")'>"+i+"</a></td>");
 		w++;
+
 		if(w%7==1&&i!=cal.getActualMaximum(Calendar.DATE)){
 			out.println("</tr>");
 			out.println("<tr height='100'>"); // 공백 부분
@@ -99,6 +103,7 @@ int[] schedules = repository.getScheduleCounts();
 			    out.println("<tr height='25'>");
 		}
 	}
+
 	// 뒷부분 공백처리
 	if(w%7!=1){
 		if(w%7==0){

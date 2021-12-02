@@ -20,6 +20,7 @@
 %>
 <%
      request.setCharacterEncoding("utf-8");
+
 	 String ymd = request.getParameter("ymd");
     int year = Integer.parseInt(ymd.substring(0,4));
     int month = Integer.parseInt(ymd.substring(4,6));
@@ -58,6 +59,8 @@
     	schedule.addTodList(new Todo(date,seq,fromTime,toTime,toDo));
     	list.add(schedule);		
 	}
+
+
 %>
 <%
 	response.sendRedirect("calendar.jsp");

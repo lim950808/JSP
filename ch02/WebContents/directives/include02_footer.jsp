@@ -1,1 +1,1 @@
-Copyright @copy; JSPBOOK;
+Copyright &copy; JSPBOOk
