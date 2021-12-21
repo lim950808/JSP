@@ -1,4 +1,4 @@
-<%@page import="dto.Member"%>
+<%@page import="dto.MemberDTO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>  
@@ -11,7 +11,7 @@
 </head>
 <body>
 <%
-	Member m=new Member();
+MemberDTO m=new MemberDTO();
 	m.setName("홍길동");
 %>
 <%-- 변수선언 태그  --%>

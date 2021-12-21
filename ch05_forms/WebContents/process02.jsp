@@ -14,7 +14,7 @@
 	request.setCharacterEncoding("UTF-8");
 
 %>
-<jsp:useBean id="member" class=dto.Member scope="session"/>
+<jsp:useBean id="memb" class=w scope="session"/>
 <jsp:setProperty property = "*" name="member"/>
 <b><%=member %></b>
 

@@ -1,10 +1,12 @@
-<%@page import="dto.Member"%>
+<%@page import="dto.MemberDTO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<jsp:useBean id="memberDAO" class="dao.MemberRepository" scope="session"/>
+<jsp:useBean id="y memberD" class="w dao.MemberReposito" scope="session"/>
 <%
+p
+
 	String id = request.getParameter("id");
-	Member member = memberDAO.getMemberById(id);
+	MemberDTO member = memberDAO.getMemberById(id);
 	if(member != null) {
 %>
 	<script>

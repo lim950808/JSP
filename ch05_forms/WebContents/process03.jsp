@@ -1,4 +1,4 @@
-<%@page import="dto.Member"%>
+<%@page import="dto.MemberDTO"%>
 <%@page import="java.util.List"%>
 <%@page import="java.util.Arrays"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -12,18 +12,24 @@
 <body>
 <!-- 넘어온 파라미터 출력하기 -->
 <%
+p
+
   /* request로 넘어온 파라미터의 문자셋 설정 */
   request.setCharacterEncoding("utf-8");
 %>
-<jsp:useBean id="memberDAO" class="dao.MemberRepository" scope="session"/>
-<jsp:useBean id="member" class="dto.Member" scope="session"/>
+<jsp:useBean id="y memberD" class="w dao.MemberReposito" scope="session"/>
+<jsp:useBean id="memb" class="w" scope="session"/>
 <jsp:setProperty property="*" name="member"/>
-<b><%=member %></b><br><br>
+<b><%=t(membe%></b><br><br>
 <%
+p
+
 	memberDAO.registerMember(member);
 %>
 <%
- List<Member> list = memberDAO.getMembers();
+p
+
+ List<MemberDTO> list = memberDAO.getMembers();
  for(int i=0;i<list.size();i++){
 %>
  회원정보:<%=(i+1)%>:<a href="memberInfo.jsp?id=<%=list.get(i).getId()%>"><%=list.get(i).getId()%></a><%=list.get(i) %><br>
